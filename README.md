@@ -1,1 +1,1 @@
-# pp1
+# Repozytorium zawierające ćwiczenia wykonane na zajęciach podstaw programowania.
