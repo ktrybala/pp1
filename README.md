@@ -1,1 +1,1 @@
-# Repozytorium zawierające ćwiczenia wykonane na zajęciach podstaw programowania.
+# Repozytorium zawierające ćwiczenia wykonane na zajęciach pracowni programowania.
