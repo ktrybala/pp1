@@ -1,18 +1,34 @@
 import io
-import tkinter as tk
+from tkinter import*
 from PIL import ImageTk, Image
-main = tk.Tk()
-main.geometry("200x80")
+
+main = Tk()
+main.geometry("400x400")
 main.title('SKUTE BOBO')
 main['bg']='pink'
 
+frame_a = Frame()
+frame_b = Frame()
+
 def photo():
-	#image = Image.open(r"/Users/ktrybala/documents/bobo.png")
-	#image = image.resize("200x200")
-	#img = ImageTk.PhotoImage(image)
-	img = Image.open(r"/Users/ktrybala/documents/bobo.png")
-	img.show()
-button = tk.Button(main, text='skuter bejbe', highlightbackground='white', fg='black', command=photo)
+	global img
+	path = r"/users/ktrybala/documents/bobo.png"
+	img = ImageTk.PhotoImage(Image.open(path))
+	panel = Label(main, image=img)
+	panel.pack()
+
+greeting = Label(text='matczak roku', bg='pink')
+
+button = Button(
+	master = frame_a, 
+	text='skuter bejbe',
+	highlightbackground='white',
+	fg='black',
+	command = photo)
+
 button.pack()
+frame_a.pack()
+frame_b.pack()
+greeting.pack()
 
 main.mainloop()
