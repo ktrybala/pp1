@@ -4,13 +4,18 @@ a = int(input("Value of the first side: "))
 b = int(input("Value of the second side: "))
 c = int(input("Value of the third side: "))
 
+#Sorting sides by theirs values
+
 sides = [a,b,c]
-sides.sort() #sorting sides by theirs value
+sides.sort() 
+
+#Heron formula function
 
 def heron():
 	p = (a + b + c) / 2
 	area = math.sqrt(p * (p - a) * (p - b) * (p - c))
 	print(f"Area of the triangle: {round(area,2)}")
+
 
 if (sides[0] + sides[1]) > sides[2]:
 	heron()
