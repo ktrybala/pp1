@@ -5,6 +5,8 @@ from PIL import ImageTk, Image
 main = Tk()
 main.geometry("400x400")
 main.title('SKUTE BOBO')
+icopath = r"/users/ktrybala/documents/bobo.ico"
+main.iconbitmap(icopath)
 main['bg']='pink'
 
 frame_a = Frame()
