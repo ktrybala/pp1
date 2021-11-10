@@ -14,5 +14,5 @@ def array2str(array):
 
 print (array)
 print(f"Sum of the array numbers: {sum(array,sum1)}")
-print(array2str(array))
+print(f"Array as a string: {array2str(array)}")
 
