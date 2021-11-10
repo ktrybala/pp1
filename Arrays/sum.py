@@ -9,7 +9,7 @@ def sum(array,sum1):
 def array2str(array):
 	result = ""
 	for x in array:
-		result += " " + str(x)
+		result += str(x) + " " 
 	return result
 
 print (array)
