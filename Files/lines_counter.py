@@ -11,4 +11,4 @@ if y == True:
 		    x += 1
     print(f"This text file has {x} lines.")
 else:
-	print("This file doesn't exists")
+	print("This file doesn't exist")
