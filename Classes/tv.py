@@ -6,12 +6,13 @@ class TV:
         self.is_on = False
         self.channel_no = 1
         self.channels = []
+        self.volume = 0
         
     def show_status(self):
         if self.is_on == False:
             print("TV is off")
         elif self.is_on:
-            print(f"TV is on, channel {self.channel_no}")
+            print(f"TV is on, channel {self.channel_no}, volume: {self.volume}")
     
     def turn_on(self):
         self.is_on = True
@@ -30,13 +31,27 @@ class TV:
         for i in self.channels:
             print(f"{x}. {i}")
             x += 1
+
+    def increase_volume(self):
+        if self.volume < 10:
+            self.volume += 1
+        elif self.volume >= 10:
+            print("You've reached volume limit.")
+
+    def decrease_volume(self):
+        if self.volume < 0:
+            self.volume -= 1
+        elif self.volume == 0:
+            print("Your TV is already muted.")
     
 
 tv1 = TV()
 tv1.show_status()
 tv1.turn_on()
 tv1.show_status()
+tv1.increase_volume()
 tv1.change_channel()
+tv1.increase_volume()
 tv1.show_status()
 tv1.turn_off()
 tv1.show_status()
